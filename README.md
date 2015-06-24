@@ -5,6 +5,8 @@ provided Makefile -- returns an ASCII compass.
 
 The goal is to minimize the binary size.
 
+You can submit your solution (the file `main.s`) to http://codegolf.coredump.ch/challenges/asm-compass/
+
 ## Expected output
 
 The template for the output is provided in `compass.txt`. The program is passed
