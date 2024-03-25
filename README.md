@@ -1,11 +1,9 @@
 # Intel x86 ASM Codegolf
 
-Write an Intel x86 assembly program that -- when compiled with the
+Write an Intel x86 assembly program (`main.s`) that -- when compiled with the
 provided Makefile -- returns an ASCII compass.
 
-The goal is to minimize the binary size.
-
-You can submit your solution (the file `main.s`) to http://codegolf.coredump.ch/challenges/asm-compass/
+The goal is to minimize the compiled binary size of `main`.
 
 ## Expected output
 
