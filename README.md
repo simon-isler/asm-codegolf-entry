@@ -45,7 +45,7 @@ Build the binary using `Make`.
 
 Run the test script with Python 2:
 
-    $ python2 test.py
+    $ python test.py
     Success!
     Binary size is 460 bytes.
 
