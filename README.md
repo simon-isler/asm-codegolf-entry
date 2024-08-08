@@ -1,9 +1,8 @@
-# Intel x86 ASM Codegolf
+# NASM Codegolf
 
-Write an Intel x86 assembly program (`main.s`) that -- when compiled with the
-provided Makefile -- returns an ASCII compass.
-
-The goal is to minimize the compiled binary size of `main`.
+Write an Intel x86 assembly program using [NASM](https://de.wikipedia.org/wiki/Netwide_Assembler) that returns an ASCII compass.
+The goal is minimize the resulting ELF binary size of the program.
+The source code in `main.s` already works and compiles to `main`.
 
 ## Expected output
 
@@ -31,7 +30,7 @@ Example:
       \_ _/
         S
 
-## Contstraints
+## Constraints
 
 - The code needs to be written in 32 bit Intel (x86) assembly (NASM syntax).
 - No library calls are allowed, use syscalls instead
