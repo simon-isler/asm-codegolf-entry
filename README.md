@@ -70,15 +70,9 @@ If you want a binary with debug symbols included, use the `debug` Make target:
 
 ## Docker
 
-You can also verify the code within an isolated
-[Docker](http://www.docker.com/) instance.
+There's a Dockerfile you can use to run this in isolation
 
-    $ docker build -t dbrgn/codegolf .
-    ...
-    $ export SRC=/path/to/source/dir
-    $ export FILE=filename.s
-    $ docker run --rm \
-      -v $SRC:/code \
-      -u compass -w /home/compass/codegolf \
-      dbrgn/codegolf \
-      /bin/bash -c "cp /code/$FILE main.s && make && python test.py"
+```sh
+docker build -t codegolf .
+docker run -v .:/code -it codegolf bash
+```
